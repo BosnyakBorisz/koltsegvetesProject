@@ -96,10 +96,20 @@ namespace koltsegvetesAlkalmazas
                                         MessageBoxIcon.Information);
 
                         //ha sikeres a bejelntkezes megnyitja a tranzakciokFormot
-                        var tranzF = new tranzakciokForm();
-                        tranzF.FormClosed += (s, args) => this.Close();
-                        tranzF.Show();
-                        this.Hide();
+                        //var tranzF = new tranzakciokForm();
+                        //tranzF.FormClosed += (s, args) => this.Close();
+                        //tranzF.Show();
+                        //this.Hide();
+                        cmd.CommandText = "SELECT id FROM users WHERE username=@u AND password_hash=@p";
+                        object result = cmd.ExecuteScalar();
+                        if (result != null)
+                        {
+                            int userId = Convert.ToInt32(result);
+                            var tranzF = new tranzakciokForm(userId);
+                            tranzF.FormClosed += (s, args) => this.Close();
+                            tranzF.Show();
+                            this.Hide();
+                        }
                         // TODO: itt indítsd a főablakot, pl.:
                         // var main = new MainForm();
                         // main.Show();
@@ -129,5 +139,7 @@ namespace koltsegvetesAlkalmazas
         {
             txtPass.UseSystemPasswordChar = !chkShowPassword.Checked;
         }
+
+   
     }
 }

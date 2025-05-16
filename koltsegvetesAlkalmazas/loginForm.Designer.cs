@@ -42,8 +42,8 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2.SuspendLayout();
@@ -193,15 +193,6 @@
             this.panel8.Size = new System.Drawing.Size(276, 36);
             this.panel8.TabIndex = 6;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(2, -1);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Nincs még fiókod?";
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -213,6 +204,15 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Regisztrálj!";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(2, -1);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(118, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Nincs még fiókod?";
             // 
             // panel3
             // 

@@ -119,7 +119,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel10, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnRegister, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.panel11, 1, 4);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(361, 83);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(350, 83);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
@@ -131,13 +131,13 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(409, 283);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(454, 283);
             this.tableLayoutPanel1.TabIndex = 24;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.txtEmail);
-            this.panel8.Location = new System.Drawing.Point(125, 3);
+            this.panel8.Location = new System.Drawing.Point(139, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(281, 29);
             this.panel8.TabIndex = 25;
@@ -154,18 +154,18 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(3, 133);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(116, 29);
+            this.panel3.Size = new System.Drawing.Size(130, 29);
             this.panel3.TabIndex = 22;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(5, 7);
+            this.label2.Location = new System.Drawing.Point(-6, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 16);
+            this.label2.Size = new System.Drawing.Size(132, 16);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Jelszó";
+            this.label2.Text = "Jelszó megerősítése";
             // 
             // panel4
             // 
@@ -179,7 +179,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label4.Location = new System.Drawing.Point(4, 6);
+            this.label4.Location = new System.Drawing.Point(-2, 6);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 16);
             this.label4.TabIndex = 15;
@@ -197,7 +197,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Location = new System.Drawing.Point(0, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 16);
             this.label1.TabIndex = 8;
@@ -215,7 +215,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(4, 6);
+            this.label3.Location = new System.Drawing.Point(1, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 16);
             this.label3.TabIndex = 13;
@@ -225,7 +225,7 @@
             // 
             this.chkShowPassReg1.AutoSize = true;
             this.chkShowPassReg1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.chkShowPassReg1.Location = new System.Drawing.Point(125, 108);
+            this.chkShowPassReg1.Location = new System.Drawing.Point(139, 108);
             this.chkShowPassReg1.Name = "chkShowPassReg1";
             this.chkShowPassReg1.Size = new System.Drawing.Size(123, 19);
             this.chkShowPassReg1.TabIndex = 10;
@@ -237,7 +237,7 @@
             // 
             this.chkShowPassReg2.AutoSize = true;
             this.chkShowPassReg2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.chkShowPassReg2.Location = new System.Drawing.Point(125, 168);
+            this.chkShowPassReg2.Location = new System.Drawing.Point(139, 168);
             this.chkShowPassReg2.Name = "chkShowPassReg2";
             this.chkShowPassReg2.Size = new System.Drawing.Size(123, 19);
             this.chkShowPassReg2.TabIndex = 16;
@@ -249,7 +249,7 @@
             // 
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(125, 253);
+            this.panel1.Location = new System.Drawing.Point(139, 253);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(281, 25);
             this.panel1.TabIndex = 17;
@@ -267,7 +267,7 @@
             // panel9
             // 
             this.panel9.Controls.Add(this.txtRegUser);
-            this.panel9.Location = new System.Drawing.Point(125, 38);
+            this.panel9.Location = new System.Drawing.Point(139, 38);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(281, 29);
             this.panel9.TabIndex = 24;
@@ -282,7 +282,7 @@
             // panel10
             // 
             this.panel10.Controls.Add(this.txtRegPass1);
-            this.panel10.Location = new System.Drawing.Point(125, 73);
+            this.panel10.Location = new System.Drawing.Point(139, 73);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(281, 29);
             this.panel10.TabIndex = 25;
@@ -299,7 +299,7 @@
             // 
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnRegister.Location = new System.Drawing.Point(125, 193);
+            this.btnRegister.Location = new System.Drawing.Point(139, 193);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(236, 34);
             this.btnRegister.TabIndex = 11;
@@ -310,7 +310,7 @@
             // panel11
             // 
             this.panel11.Controls.Add(this.txtRegPass2);
-            this.panel11.Location = new System.Drawing.Point(125, 133);
+            this.panel11.Location = new System.Drawing.Point(139, 133);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(281, 29);
             this.panel11.TabIndex = 26;
@@ -328,7 +328,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(354, 38);
+            this.label7.Location = new System.Drawing.Point(343, 38);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(224, 42);
             this.label7.TabIndex = 27;
