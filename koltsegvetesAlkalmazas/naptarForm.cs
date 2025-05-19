@@ -12,6 +12,7 @@ namespace koltsegvetesAlkalmazas
 {
     public partial class naptarForm : Form
     {
+        private readonly int _userId;
         public naptarForm()
         {
             InitializeComponent();
@@ -20,6 +21,11 @@ namespace koltsegvetesAlkalmazas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            using (var regForm = new tranzakciokForm(_userId))
+            {
+                regForm.ShowDialog();
+            }
             this.Close();
         }
 

@@ -184,7 +184,7 @@ namespace koltsegvetesAlkalmazas
             {
                 regForm.ShowDialog();
             }
-            this.Show();
+            this.Close();
         }
     }
 }
