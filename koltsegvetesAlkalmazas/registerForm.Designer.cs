@@ -55,6 +55,7 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.txtRegPass2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -84,6 +85,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel6.Controls.Add(this.label7);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(-1, -4);
             this.panel6.Name = "panel6";
@@ -327,24 +329,36 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label7.Location = new System.Drawing.Point(343, 38);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(67, 323);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(224, 42);
             this.label7.TabIndex = 27;
             this.label7.Text = "Regisztráció";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.label6.Location = new System.Drawing.Point(343, 38);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(212, 42);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Üdvözüljük!";
             // 
             // registerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel6);
             this.Name = "registerForm";
             this.Text = "registerForm";
             this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -397,5 +411,6 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TextBox txtRegPass2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
