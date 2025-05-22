@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
 
 namespace koltsegvetesAlkalmazas
 {
@@ -100,10 +101,25 @@ namespace koltsegvetesAlkalmazas
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (listBoxTransactions.SelectedItem == null) return;
+            //if (listBoxTransactions.SelectedItem == null) return;
             // Ha egyszerű String-et tároltunk, nem yankkoljuk ID-t – 
             // törléshez át kell térni TxItem class-ra, de most skip
-            MessageBox.Show("Törlés még nincs implementálva.");
+            //MessageBox.Show("Törlés még nincs implementálva.");
+
+            comboCurrency.SelectedIndex = -1;
+
+            numAmount.Value = 0;
+
+            rbIncome.Checked = true;
+            rbExpense.Checked = false;
+
+            comboCategory.SelectedIndex = -1;
+
+            txtNote.Clear();
+
+            dtpDate.Value = DateTime.Today;
+
+            listBoxTransactions.ClearSelected();
         }
 
         private void LoadTransactions()
@@ -179,12 +195,22 @@ namespace koltsegvetesAlkalmazas
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //this.Hide();
+            //using (var regForm = new naptarForm())
+            //{
+            //    regForm.ShowDialog();
+            //}
+            //this.Close();
+
+            var naptar = new naptarForm();
+            naptar.FormClosed += (s, args) => this.Close(); // ha bezárod a naptárt, zárja le ezt is
+            naptar.Show();
             this.Hide();
-            using (var regForm = new naptarForm())
-            {
-                regForm.ShowDialog();
-            }
-            this.Close();
+        }
+
+        private void btnSzerkesztes_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

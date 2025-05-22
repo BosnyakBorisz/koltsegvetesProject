@@ -33,7 +33,7 @@
             this.lblBalance = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDate = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.numAmount = new System.Windows.Forms.NumericUpDown();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -55,6 +55,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnDeleteTransaction = new System.Windows.Forms.Button();
+            this.checkBoxConfirmDelete = new System.Windows.Forms.CheckBox();
+            this.btnSzerkesztes = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numAmount)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -108,12 +111,12 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Kiadások:";
             // 
-            // dateTimePicker1
+            // dtpDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(100, 147);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(141, 22);
-            this.dateTimePicker1.TabIndex = 11;
+            this.dtpDate.Location = new System.Drawing.Point(100, 147);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(141, 22);
+            this.dtpDate.TabIndex = 11;
             // 
             // label8
             // 
@@ -265,7 +268,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.dtpDate);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.numAmount);
             this.groupBox1.Controls.Add(this.btnDelete);
@@ -339,11 +342,46 @@
             this.button1.Text = "Tranzakciók";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // btnDeleteTransaction
+            // 
+            this.btnDeleteTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDeleteTransaction.Location = new System.Drawing.Point(330, 395);
+            this.btnDeleteTransaction.Name = "btnDeleteTransaction";
+            this.btnDeleteTransaction.Size = new System.Drawing.Size(130, 25);
+            this.btnDeleteTransaction.TabIndex = 16;
+            this.btnDeleteTransaction.Text = "Törlés";
+            this.btnDeleteTransaction.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxConfirmDelete
+            // 
+            this.checkBoxConfirmDelete.AutoSize = true;
+            this.checkBoxConfirmDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.checkBoxConfirmDelete.Location = new System.Drawing.Point(333, 369);
+            this.checkBoxConfirmDelete.Name = "checkBoxConfirmDelete";
+            this.checkBoxConfirmDelete.Size = new System.Drawing.Size(105, 20);
+            this.checkBoxConfirmDelete.TabIndex = 15;
+            this.checkBoxConfirmDelete.Text = "Megerősítem";
+            this.checkBoxConfirmDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnSzerkesztes
+            // 
+            this.btnSzerkesztes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnSzerkesztes.Location = new System.Drawing.Point(330, 338);
+            this.btnSzerkesztes.Name = "btnSzerkesztes";
+            this.btnSzerkesztes.Size = new System.Drawing.Size(130, 25);
+            this.btnSzerkesztes.TabIndex = 14;
+            this.btnSzerkesztes.Text = "Szerkesztés";
+            this.btnSzerkesztes.UseVisualStyleBackColor = true;
+            this.btnSzerkesztes.Click += new System.EventHandler(this.btnSzerkesztes_Click);
+            // 
             // tranzakciokForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDeleteTransaction);
+            this.Controls.Add(this.checkBoxConfirmDelete);
+            this.Controls.Add(this.btnSzerkesztes);
             this.Controls.Add(this.listBoxTransactions);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
@@ -359,6 +397,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -369,7 +408,7 @@
         private System.Windows.Forms.Label lblBalance;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDate;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown numAmount;
         private System.Windows.Forms.Button btnDelete;
@@ -391,5 +430,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDeleteTransaction;
+        private System.Windows.Forms.CheckBox checkBoxConfirmDelete;
+        private System.Windows.Forms.Button btnSzerkesztes;
     }
 }
